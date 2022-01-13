@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF9012DF278FB31C0039025F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9012DE278FB31C0039025F /* AppDelegate.swift */; };
+		FF9012E1278FB31C0039025F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9012E0278FB31C0039025F /* SceneDelegate.swift */; };
+		FF9012E3278FB31C0039025F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9012E2278FB31C0039025F /* ViewController.swift */; };
+		FF9012E6278FB31C0039025F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF9012E4278FB31C0039025F /* Main.storyboard */; };
+		FF9012E8278FB31E0039025F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF9012E7278FB31E0039025F /* Assets.xcassets */; };
+		FF9012EB278FB31E0039025F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF9012E9278FB31E0039025F /* LaunchScreen.storyboard */; };
+		FF9012F6278FB31E0039025F /* RestfulLoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9012F5278FB31E0039025F /* RestfulLoginTests.swift */; };
+		FF901300278FB31E0039025F /* RestfulLoginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9012FF278FB31E0039025F /* RestfulLoginUITests.swift */; };
+		FF901302278FB31E0039025F /* RestfulLoginUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF901301278FB31E0039025F /* RestfulLoginUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF9012F2278FB31E0039025F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF9012D3278FB31C0039025F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF9012DA278FB31C0039025F;
+			remoteInfo = RestfulLogin;
+		};
+		FF9012FC278FB31E0039025F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF9012D3278FB31C0039025F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF9012DA278FB31C0039025F;
+			remoteInfo = RestfulLogin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF9012DB278FB31C0039025F /* RestfulLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestfulLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF9012DE278FB31C0039025F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF9012E0278FB31C0039025F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FF9012E2278FB31C0039025F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF9012E5278FB31C0039025F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF9012E7278FB31E0039025F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF9012EA278FB31E0039025F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF9012EC278FB31E0039025F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF9012F1278FB31E0039025F /* RestfulLoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestfulLoginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF9012F5278FB31E0039025F /* RestfulLoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestfulLoginTests.swift; sourceTree = "<group>"; };
+		FF9012FB278FB31E0039025F /* RestfulLoginUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestfulLoginUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF9012FF278FB31E0039025F /* RestfulLoginUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestfulLoginUITests.swift; sourceTree = "<group>"; };
+		FF901301278FB31E0039025F /* RestfulLoginUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestfulLoginUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF9012D8278FB31C0039025F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF9012EE278FB31E0039025F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF9012F8278FB31E0039025F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF9012D2278FB31C0039025F = {
+			isa = PBXGroup;
+			children = (
+				FF9012DD278FB31C0039025F /* RestfulLogin */,
+				FF9012F4278FB31E0039025F /* RestfulLoginTests */,
+				FF9012FE278FB31E0039025F /* RestfulLoginUITests */,
+				FF9012DC278FB31C0039025F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF9012DC278FB31C0039025F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF9012DB278FB31C0039025F /* RestfulLogin.app */,
+				FF9012F1278FB31E0039025F /* RestfulLoginTests.xctest */,
+				FF9012FB278FB31E0039025F /* RestfulLoginUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF9012DD278FB31C0039025F /* RestfulLogin */ = {
+			isa = PBXGroup;
+			children = (
+				FF9012DE278FB31C0039025F /* AppDelegate.swift */,
+				FF9012E0278FB31C0039025F /* SceneDelegate.swift */,
+				FF9012E2278FB31C0039025F /* ViewController.swift */,
+				FF9012E4278FB31C0039025F /* Main.storyboard */,
+				FF9012E7278FB31E0039025F /* Assets.xcassets */,
+				FF9012E9278FB31E0039025F /* LaunchScreen.storyboard */,
+				FF9012EC278FB31E0039025F /* Info.plist */,
+			);
+			path = RestfulLogin;
+			sourceTree = "<group>";
+		};
+		FF9012F4278FB31E0039025F /* RestfulLoginTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF9012F5278FB31E0039025F /* RestfulLoginTests.swift */,
+			);
+			path = RestfulLoginTests;
+			sourceTree = "<group>";
+		};
+		FF9012FE278FB31E0039025F /* RestfulLoginUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FF9012FF278FB31E0039025F /* RestfulLoginUITests.swift */,
+				FF901301278FB31E0039025F /* RestfulLoginUITestsLaunchTests.swift */,
+			);
+			path = RestfulLoginUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF9012DA278FB31C0039025F /* RestfulLogin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF901305278FB31E0039025F /* Build configuration list for PBXNativeTarget "RestfulLogin" */;
+			buildPhases = (
+				FF9012D7278FB31C0039025F /* Sources */,
+				FF9012D8278FB31C0039025F /* Frameworks */,
+				FF9012D9278FB31C0039025F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RestfulLogin;
+			productName = RestfulLogin;
+			productReference = FF9012DB278FB31C0039025F /* RestfulLogin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF9012F0278FB31E0039025F /* RestfulLoginTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF901308278FB31E0039025F /* Build configuration list for PBXNativeTarget "RestfulLoginTests" */;
+			buildPhases = (
+				FF9012ED278FB31E0039025F /* Sources */,
+				FF9012EE278FB31E0039025F /* Frameworks */,
+				FF9012EF278FB31E0039025F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF9012F3278FB31E0039025F /* PBXTargetDependency */,
+			);
+			name = RestfulLoginTests;
+			productName = RestfulLoginTests;
+			productReference = FF9012F1278FB31E0039025F /* RestfulLoginTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FF9012FA278FB31E0039025F /* RestfulLoginUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF90130B278FB31E0039025F /* Build configuration list for PBXNativeTarget "RestfulLoginUITests" */;
+			buildPhases = (
+				FF9012F7278FB31E0039025F /* Sources */,
+				FF9012F8278FB31E0039025F /* Frameworks */,
+				FF9012F9278FB31E0039025F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF9012FD278FB31E0039025F /* PBXTargetDependency */,
+			);
+			name = RestfulLoginUITests;
+			productName = RestfulLoginUITests;
+			productReference = FF9012FB278FB31E0039025F /* RestfulLoginUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF9012D3278FB31C0039025F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					FF9012DA278FB31C0039025F = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					FF9012F0278FB31E0039025F = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = FF9012DA278FB31C0039025F;
+					};
+					FF9012FA278FB31E0039025F = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = FF9012DA278FB31C0039025F;
+					};
+				};
+			};
+			buildConfigurationList = FF9012D6278FB31C0039025F /* Build configuration list for PBXProject "RestfulLogin" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF9012D2278FB31C0039025F;
+			productRefGroup = FF9012DC278FB31C0039025F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF9012DA278FB31C0039025F /* RestfulLogin */,
+				FF9012F0278FB31E0039025F /* RestfulLoginTests */,
+				FF9012FA278FB31E0039025F /* RestfulLoginUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF9012D9278FB31C0039025F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF9012EB278FB31E0039025F /* LaunchScreen.storyboard in Resources */,
+				FF9012E8278FB31E0039025F /* Assets.xcassets in Resources */,
+				FF9012E6278FB31C0039025F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF9012EF278FB31E0039025F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF9012F9278FB31E0039025F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF9012D7278FB31C0039025F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF9012E3278FB31C0039025F /* ViewController.swift in Sources */,
+				FF9012DF278FB31C0039025F /* AppDelegate.swift in Sources */,
+				FF9012E1278FB31C0039025F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF9012ED278FB31E0039025F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF9012F6278FB31E0039025F /* RestfulLoginTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF9012F7278FB31E0039025F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF901302278FB31E0039025F /* RestfulLoginUITestsLaunchTests.swift in Sources */,
+				FF901300278FB31E0039025F /* RestfulLoginUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF9012F3278FB31E0039025F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF9012DA278FB31C0039025F /* RestfulLogin */;
+			targetProxy = FF9012F2278FB31E0039025F /* PBXContainerItemProxy */;
+		};
+		FF9012FD278FB31E0039025F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF9012DA278FB31C0039025F /* RestfulLogin */;
+			targetProxy = FF9012FC278FB31E0039025F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF9012E4278FB31C0039025F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF9012E5278FB31C0039025F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF9012E9278FB31E0039025F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF9012EA278FB31E0039025F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF901303278FB31E0039025F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF901304278FB31E0039025F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF901306278FB31E0039025F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3GCFJ6RJM9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RestfulLogin/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.krdevteam.RestfulLogin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF901307278FB31E0039025F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3GCFJ6RJM9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RestfulLogin/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.krdevteam.RestfulLogin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FF901309278FB31E0039025F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3GCFJ6RJM9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.krdevteam.RestfulLoginTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RestfulLogin.app/RestfulLogin";
+			};
+			name = Debug;
+		};
+		FF90130A278FB31E0039025F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3GCFJ6RJM9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.krdevteam.RestfulLoginTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RestfulLogin.app/RestfulLogin";
+			};
+			name = Release;
+		};
+		FF90130C278FB31E0039025F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3GCFJ6RJM9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.krdevteam.RestfulLoginUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RestfulLogin;
+			};
+			name = Debug;
+		};
+		FF90130D278FB31E0039025F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3GCFJ6RJM9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.krdevteam.RestfulLoginUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RestfulLogin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF9012D6278FB31C0039025F /* Build configuration list for PBXProject "RestfulLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF901303278FB31E0039025F /* Debug */,
+				FF901304278FB31E0039025F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF901305278FB31E0039025F /* Build configuration list for PBXNativeTarget "RestfulLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF901306278FB31E0039025F /* Debug */,
+				FF901307278FB31E0039025F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF901308278FB31E0039025F /* Build configuration list for PBXNativeTarget "RestfulLoginTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF901309278FB31E0039025F /* Debug */,
+				FF90130A278FB31E0039025F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF90130B278FB31E0039025F /* Build configuration list for PBXNativeTarget "RestfulLoginUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF90130C278FB31E0039025F /* Debug */,
+				FF90130D278FB31E0039025F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF9012D3278FB31C0039025F /* Project object */;
+}
