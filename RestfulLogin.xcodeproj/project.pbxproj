@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60209E98DFB47DEA11206575 /* Pods_RestfulLogin_RestfulLoginUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC5D15C09220205524E4BA6A /* Pods_RestfulLogin_RestfulLoginUITests.framework */; };
+		63B83883137D4B04E471C510 /* Pods_RestfulLoginTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D163D1DEA7902EFC9B79C65 /* Pods_RestfulLoginTests.framework */; };
+		F1642DD54444457FB006ECC0 /* Pods_RestfulLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8470F93D36AE374EA70B66D /* Pods_RestfulLogin.framework */; };
 		FF9012DF278FB31C0039025F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9012DE278FB31C0039025F /* AppDelegate.swift */; };
 		FF9012E1278FB31C0039025F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9012E0278FB31C0039025F /* SceneDelegate.swift */; };
 		FF9012E3278FB31C0039025F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9012E2278FB31C0039025F /* ViewController.swift */; };
@@ -16,6 +19,9 @@
 		FF9012F6278FB31E0039025F /* RestfulLoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9012F5278FB31E0039025F /* RestfulLoginTests.swift */; };
 		FF901300278FB31E0039025F /* RestfulLoginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9012FF278FB31E0039025F /* RestfulLoginUITests.swift */; };
 		FF901302278FB31E0039025F /* RestfulLoginUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF901301278FB31E0039025F /* RestfulLoginUITestsLaunchTests.swift */; };
+		FF901312278FBA050039025F /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF901311278FBA050039025F /* Register.storyboard */; };
+		FF901314278FBBA00039025F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF901313278FBBA00039025F /* RegisterViewController.swift */; };
+		FF901316278FC1A20039025F /* RegisterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF901315278FC1A20039025F /* RegisterResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D163D1DEA7902EFC9B79C65 /* Pods_RestfulLoginTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RestfulLoginTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		10C4C4C8A7CC2D126CFF175D /* Pods-RestfulLogin-RestfulLoginUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestfulLogin-RestfulLoginUITests.release.xcconfig"; path = "Target Support Files/Pods-RestfulLogin-RestfulLoginUITests/Pods-RestfulLogin-RestfulLoginUITests.release.xcconfig"; sourceTree = "<group>"; };
+		62C026B1CB6A951E9F43A0FB /* Pods-RestfulLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestfulLogin.release.xcconfig"; path = "Target Support Files/Pods-RestfulLogin/Pods-RestfulLogin.release.xcconfig"; sourceTree = "<group>"; };
+		6E4B687756D81210E52813ED /* Pods-RestfulLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestfulLogin.debug.xcconfig"; path = "Target Support Files/Pods-RestfulLogin/Pods-RestfulLogin.debug.xcconfig"; sourceTree = "<group>"; };
+		9CA6EEE2E17FF617D85EBB8D /* Pods-RestfulLoginTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestfulLoginTests.debug.xcconfig"; path = "Target Support Files/Pods-RestfulLoginTests/Pods-RestfulLoginTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B0AFDBA50D7EE9C36B9F1333 /* Pods-RestfulLogin-RestfulLoginUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestfulLogin-RestfulLoginUITests.debug.xcconfig"; path = "Target Support Files/Pods-RestfulLogin-RestfulLoginUITests/Pods-RestfulLogin-RestfulLoginUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CC5D15C09220205524E4BA6A /* Pods_RestfulLogin_RestfulLoginUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RestfulLogin_RestfulLoginUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD252B60A4A985E09008A737 /* Pods-RestfulLoginTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestfulLoginTests.release.xcconfig"; path = "Target Support Files/Pods-RestfulLoginTests/Pods-RestfulLoginTests.release.xcconfig"; sourceTree = "<group>"; };
+		F8470F93D36AE374EA70B66D /* Pods_RestfulLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RestfulLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF9012DB278FB31C0039025F /* RestfulLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestfulLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF9012DE278FB31C0039025F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF9012E0278FB31C0039025F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +64,9 @@
 		FF9012FB278FB31E0039025F /* RestfulLoginUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestfulLoginUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF9012FF278FB31E0039025F /* RestfulLoginUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestfulLoginUITests.swift; sourceTree = "<group>"; };
 		FF901301278FB31E0039025F /* RestfulLoginUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestfulLoginUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FF901311278FBA050039025F /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
+		FF901313278FBBA00039025F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		FF901315278FC1A20039025F /* RegisterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1642DD54444457FB006ECC0 /* Pods_RestfulLogin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63B83883137D4B04E471C510 /* Pods_RestfulLoginTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +90,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60209E98DFB47DEA11206575 /* Pods_RestfulLogin_RestfulLoginUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37B190F09E8C30F3B1393981 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6E4B687756D81210E52813ED /* Pods-RestfulLogin.debug.xcconfig */,
+				62C026B1CB6A951E9F43A0FB /* Pods-RestfulLogin.release.xcconfig */,
+				B0AFDBA50D7EE9C36B9F1333 /* Pods-RestfulLogin-RestfulLoginUITests.debug.xcconfig */,
+				10C4C4C8A7CC2D126CFF175D /* Pods-RestfulLogin-RestfulLoginUITests.release.xcconfig */,
+				9CA6EEE2E17FF617D85EBB8D /* Pods-RestfulLoginTests.debug.xcconfig */,
+				DD252B60A4A985E09008A737 /* Pods-RestfulLoginTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6BF27A310DDCC1C9A00D108E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8470F93D36AE374EA70B66D /* Pods_RestfulLogin.framework */,
+				CC5D15C09220205524E4BA6A /* Pods_RestfulLogin_RestfulLoginUITests.framework */,
+				0D163D1DEA7902EFC9B79C65 /* Pods_RestfulLoginTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FF9012D2278FB31C0039025F = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +127,8 @@
 				FF9012F4278FB31E0039025F /* RestfulLoginTests */,
 				FF9012FE278FB31E0039025F /* RestfulLoginUITests */,
 				FF9012DC278FB31C0039025F /* Products */,
+				37B190F09E8C30F3B1393981 /* Pods */,
+				6BF27A310DDCC1C9A00D108E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,12 +145,12 @@
 		FF9012DD278FB31C0039025F /* RestfulLogin */ = {
 			isa = PBXGroup;
 			children = (
+				FF901310278FB3600039025F /* Controllers */,
+				FF90130F278FB3580039025F /* Models */,
+				FF90130E278FB34B0039025F /* Views */,
 				FF9012DE278FB31C0039025F /* AppDelegate.swift */,
 				FF9012E0278FB31C0039025F /* SceneDelegate.swift */,
-				FF9012E2278FB31C0039025F /* ViewController.swift */,
-				FF9012E4278FB31C0039025F /* Main.storyboard */,
 				FF9012E7278FB31E0039025F /* Assets.xcassets */,
-				FF9012E9278FB31E0039025F /* LaunchScreen.storyboard */,
 				FF9012EC278FB31E0039025F /* Info.plist */,
 			);
 			path = RestfulLogin;
@@ -127,6 +173,33 @@
 			path = RestfulLoginUITests;
 			sourceTree = "<group>";
 		};
+		FF90130E278FB34B0039025F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FF9012E4278FB31C0039025F /* Main.storyboard */,
+				FF9012E9278FB31E0039025F /* LaunchScreen.storyboard */,
+				FF901311278FBA050039025F /* Register.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FF90130F278FB3580039025F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FF901315278FC1A20039025F /* RegisterResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FF901310278FB3600039025F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FF9012E2278FB31C0039025F /* ViewController.swift */,
+				FF901313278FBBA00039025F /* RegisterViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +207,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF901305278FB31E0039025F /* Build configuration list for PBXNativeTarget "RestfulLogin" */;
 			buildPhases = (
+				F79C01E15F8B45C6F17513BD /* [CP] Check Pods Manifest.lock */,
 				FF9012D7278FB31C0039025F /* Sources */,
 				FF9012D8278FB31C0039025F /* Frameworks */,
 				FF9012D9278FB31C0039025F /* Resources */,
+				5BBEF253127C9053CB154B3B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +226,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF901308278FB31E0039025F /* Build configuration list for PBXNativeTarget "RestfulLoginTests" */;
 			buildPhases = (
+				007CF12854F3018F8CEB8AE4 /* [CP] Check Pods Manifest.lock */,
 				FF9012ED278FB31E0039025F /* Sources */,
 				FF9012EE278FB31E0039025F /* Frameworks */,
 				FF9012EF278FB31E0039025F /* Resources */,
@@ -169,9 +245,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF90130B278FB31E0039025F /* Build configuration list for PBXNativeTarget "RestfulLoginUITests" */;
 			buildPhases = (
+				AA1F8000D61B3FA68F1B26C7 /* [CP] Check Pods Manifest.lock */,
 				FF9012F7278FB31E0039025F /* Sources */,
 				FF9012F8278FB31E0039025F /* Frameworks */,
 				FF9012F9278FB31E0039025F /* Resources */,
+				92B5B9618A457ECC7DA478FC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -234,6 +312,7 @@
 				FF9012EB278FB31E0039025F /* LaunchScreen.storyboard in Resources */,
 				FF9012E8278FB31E0039025F /* Assets.xcassets in Resources */,
 				FF9012E6278FB31C0039025F /* Main.storyboard in Resources */,
+				FF901312278FBA050039025F /* Register.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +332,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		007CF12854F3018F8CEB8AE4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RestfulLoginTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BBEF253127C9053CB154B3B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RestfulLogin/Pods-RestfulLogin-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RestfulLogin/Pods-RestfulLogin-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RestfulLogin/Pods-RestfulLogin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92B5B9618A457ECC7DA478FC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RestfulLogin-RestfulLoginUITests/Pods-RestfulLogin-RestfulLoginUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RestfulLogin-RestfulLoginUITests/Pods-RestfulLogin-RestfulLoginUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RestfulLogin-RestfulLoginUITests/Pods-RestfulLogin-RestfulLoginUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA1F8000D61B3FA68F1B26C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RestfulLogin-RestfulLoginUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F79C01E15F8B45C6F17513BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RestfulLogin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FF9012D7278FB31C0039025F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -261,6 +443,8 @@
 				FF9012E3278FB31C0039025F /* ViewController.swift in Sources */,
 				FF9012DF278FB31C0039025F /* AppDelegate.swift in Sources */,
 				FF9012E1278FB31C0039025F /* SceneDelegate.swift in Sources */,
+				FF901316278FC1A20039025F /* RegisterResponse.swift in Sources */,
+				FF901314278FBBA00039025F /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +618,7 @@
 		};
 		FF901306278FB31E0039025F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E4B687756D81210E52813ED /* Pods-RestfulLogin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -447,6 +632,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,6 +648,7 @@
 		};
 		FF901307278FB31E0039025F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62C026B1CB6A951E9F43A0FB /* Pods-RestfulLogin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -475,6 +662,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -490,6 +678,7 @@
 		};
 		FF901309278FB31E0039025F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CA6EEE2E17FF617D85EBB8D /* Pods-RestfulLoginTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -510,6 +699,7 @@
 		};
 		FF90130A278FB31E0039025F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD252B60A4A985E09008A737 /* Pods-RestfulLoginTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -530,6 +720,7 @@
 		};
 		FF90130C278FB31E0039025F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0AFDBA50D7EE9C36B9F1333 /* Pods-RestfulLogin-RestfulLoginUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -548,6 +739,7 @@
 		};
 		FF90130D278FB31E0039025F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10C4C4C8A7CC2D126CFF175D /* Pods-RestfulLogin-RestfulLoginUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
