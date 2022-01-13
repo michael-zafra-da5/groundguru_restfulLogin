@@ -22,6 +22,7 @@
 		FF901312278FBA050039025F /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF901311278FBA050039025F /* Register.storyboard */; };
 		FF901314278FBBA00039025F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF901313278FBBA00039025F /* RegisterViewController.swift */; };
 		FF901316278FC1A20039025F /* RegisterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF901315278FC1A20039025F /* RegisterResponse.swift */; };
+		FF901318278FF03A0039025F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF901317278FF0390039025F /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		FF901311278FBA050039025F /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
 		FF901313278FBBA00039025F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		FF901315278FC1A20039025F /* RegisterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterResponse.swift; sourceTree = "<group>"; };
+		FF901317278FF0390039025F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 		FF9012DD278FB31C0039025F /* RestfulLogin */ = {
 			isa = PBXGroup;
 			children = (
+				FF901317278FF0390039025F /* GoogleService-Info.plist */,
 				FF901310278FB3600039025F /* Controllers */,
 				FF90130F278FB3580039025F /* Models */,
 				FF90130E278FB34B0039025F /* Views */,
@@ -311,6 +314,7 @@
 			files = (
 				FF9012EB278FB31E0039025F /* LaunchScreen.storyboard in Resources */,
 				FF9012E8278FB31E0039025F /* Assets.xcassets in Resources */,
+				FF901318278FF03A0039025F /* GoogleService-Info.plist in Resources */,
 				FF9012E6278FB31C0039025F /* Main.storyboard in Resources */,
 				FF901312278FBA050039025F /* Register.storyboard in Resources */,
 			);
