@@ -23,6 +23,8 @@
 		FF901314278FBBA00039025F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF901313278FBBA00039025F /* RegisterViewController.swift */; };
 		FF901316278FC1A20039025F /* RegisterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF901315278FC1A20039025F /* RegisterResponse.swift */; };
 		FF901318278FF03A0039025F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF901317278FF0390039025F /* GoogleService-Info.plist */; };
+		FF90131A278FFCD50039025F /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF901319278FFCD50039025F /* Home.storyboard */; };
+		FF90131C278FFCFD0039025F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF90131B278FFCFC0039025F /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		FF901313278FBBA00039025F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		FF901315278FC1A20039025F /* RegisterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterResponse.swift; sourceTree = "<group>"; };
 		FF901317278FF0390039025F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FF901319278FFCD50039025F /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		FF90131B278FFCFC0039025F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +186,7 @@
 				FF9012E4278FB31C0039025F /* Main.storyboard */,
 				FF9012E9278FB31E0039025F /* LaunchScreen.storyboard */,
 				FF901311278FBA050039025F /* Register.storyboard */,
+				FF901319278FFCD50039025F /* Home.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -199,6 +204,7 @@
 			children = (
 				FF9012E2278FB31C0039025F /* ViewController.swift */,
 				FF901313278FBBA00039025F /* RegisterViewController.swift */,
+				FF90131B278FFCFC0039025F /* HomeViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -315,6 +321,7 @@
 				FF9012EB278FB31E0039025F /* LaunchScreen.storyboard in Resources */,
 				FF9012E8278FB31E0039025F /* Assets.xcassets in Resources */,
 				FF901318278FF03A0039025F /* GoogleService-Info.plist in Resources */,
+				FF90131A278FFCD50039025F /* Home.storyboard in Resources */,
 				FF9012E6278FB31C0039025F /* Main.storyboard in Resources */,
 				FF901312278FBA050039025F /* Register.storyboard in Resources */,
 			);
@@ -449,6 +456,7 @@
 				FF9012E1278FB31C0039025F /* SceneDelegate.swift in Sources */,
 				FF901316278FC1A20039025F /* RegisterResponse.swift in Sources */,
 				FF901314278FBBA00039025F /* RegisterViewController.swift in Sources */,
+				FF90131C278FFCFD0039025F /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
