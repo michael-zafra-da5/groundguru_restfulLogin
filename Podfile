@@ -14,6 +14,8 @@ target 'RestfulLogin' do
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
+  
+  pod 'Cards'
 
   target 'RestfulLoginTests' do
     inherit! :search_paths

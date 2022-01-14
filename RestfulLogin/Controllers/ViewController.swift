@@ -17,6 +17,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var registerButton: UIButton!
     
+    @IBOutlet weak var versionLbl: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
@@ -25,6 +27,48 @@ class ViewController: UIViewController {
     private func setupView() {
         stackView.setCustomSpacing(18, after: emailTextField)
         stackView.setCustomSpacing(24, after: passwordTextField)
+        
+        let attributedString = NSMutableAttributedString(string: "Just click here to register", attributes: nil)
+//        let justRange = (attributedString.string as NSString).range(of: "Just")
+        let dontRange = (attributedString.string as NSString).range(of: "click here")
+        attributedString.setAttributes([
+            .font: UIFont.boldSystemFont(ofSize: 18),
+            .foregroundColor: UIColor.blue
+        ], range: dontRange)
+//        attributedString.setAttributes([
+//            .font: UIFont.boldSystemFont(ofSize: 10),
+////            .link: ""
+//            .foregroundColor: UIColor.red
+//        ], range: justRange)
+
+        versionLbl.attributedText = attributedString
+        versionLbl.isUserInteractionEnabled = true
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(tapLabel(tap:)))
+        versionLbl.addGestureRecognizer(tap)
+    }
+    
+    @objc func tapLabel(tap: UITapGestureRecognizer) {
+        guard let range = self.versionLbl.text?.range(of: "click here")?.nsRange else {
+            return
+        }
+        
+        if tap.didTapAttributedTextInLabel(label: self.versionLbl, inRange: range) {
+            // Substring tapped
+            print("tap tap tap")
+            let storyboard = UIStoryboard(name: "Register", bundle: nil)
+            let detailVC = storyboard.instantiateViewController(withIdentifier: "registerSB") as! RegisterViewController
+            self.present(detailVC, animated: true, completion: nil)
+            
+            //Opening Web URL
+//            if let url = URL(string: "https://www.google.com/"), UIApplication.shared.canOpenURL(url) {
+//               if #available(iOS 10.0, *) {
+//                  UIApplication.shared.open(url, options: [:], completionHandler: nil)
+//               } else {
+//                  UIApplication.shared.openURL(url)
+//               }
+//            }
+        }
     }
     
     @IBAction func actionLogin(_ sender: Any) {
@@ -73,4 +117,3 @@ class ViewController: UIViewController {
         self.present(detailVC, animated: true, completion: nil)
     }
 }
-

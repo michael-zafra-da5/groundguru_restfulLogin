@@ -10,6 +10,9 @@
 		60209E98DFB47DEA11206575 /* Pods_RestfulLogin_RestfulLoginUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC5D15C09220205524E4BA6A /* Pods_RestfulLogin_RestfulLoginUITests.framework */; };
 		63B83883137D4B04E471C510 /* Pods_RestfulLoginTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D163D1DEA7902EFC9B79C65 /* Pods_RestfulLoginTests.framework */; };
 		F1642DD54444457FB006ECC0 /* Pods_RestfulLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8470F93D36AE374EA70B66D /* Pods_RestfulLogin.framework */; };
+		FF7CFF15279124E9006DDFCB /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7CFF14279124E9006DDFCB /* CardView.swift */; };
+		FF7CFF1A27913D19006DDFCB /* UITapGestureRecognizerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7CFF1927913D19006DDFCB /* UITapGestureRecognizerExtension.swift */; };
+		FF7CFF1C27913E08006DDFCB /* RangeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7CFF1B27913E08006DDFCB /* RangeExtension.swift */; };
 		FF9012DF278FB31C0039025F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9012DE278FB31C0039025F /* AppDelegate.swift */; };
 		FF9012E1278FB31C0039025F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9012E0278FB31C0039025F /* SceneDelegate.swift */; };
 		FF9012E3278FB31C0039025F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9012E2278FB31C0039025F /* ViewController.swift */; };
@@ -54,6 +57,9 @@
 		CC5D15C09220205524E4BA6A /* Pods_RestfulLogin_RestfulLoginUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RestfulLogin_RestfulLoginUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD252B60A4A985E09008A737 /* Pods-RestfulLoginTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestfulLoginTests.release.xcconfig"; path = "Target Support Files/Pods-RestfulLoginTests/Pods-RestfulLoginTests.release.xcconfig"; sourceTree = "<group>"; };
 		F8470F93D36AE374EA70B66D /* Pods_RestfulLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RestfulLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF7CFF14279124E9006DDFCB /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		FF7CFF1927913D19006DDFCB /* UITapGestureRecognizerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITapGestureRecognizerExtension.swift; sourceTree = "<group>"; };
+		FF7CFF1B27913E08006DDFCB /* RangeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeExtension.swift; sourceTree = "<group>"; };
 		FF9012DB278FB31C0039025F /* RestfulLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestfulLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF9012DE278FB31C0039025F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF9012E0278FB31C0039025F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +132,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FF7CFF1627913CC8006DDFCB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FF7CFF1927913D19006DDFCB /* UITapGestureRecognizerExtension.swift */,
+				FF7CFF1B27913E08006DDFCB /* RangeExtension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		FF9012D2278FB31C0039025F = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +166,7 @@
 		FF9012DD278FB31C0039025F /* RestfulLogin */ = {
 			isa = PBXGroup;
 			children = (
+				FF7CFF1627913CC8006DDFCB /* Utils */,
 				FF901317278FF0390039025F /* GoogleService-Info.plist */,
 				FF901310278FB3600039025F /* Controllers */,
 				FF90130F278FB3580039025F /* Models */,
@@ -187,6 +203,7 @@
 				FF9012E9278FB31E0039025F /* LaunchScreen.storyboard */,
 				FF901311278FBA050039025F /* Register.storyboard */,
 				FF901319278FFCD50039025F /* Home.storyboard */,
+				FF7CFF14279124E9006DDFCB /* CardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -451,12 +468,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF7CFF1C27913E08006DDFCB /* RangeExtension.swift in Sources */,
+				FF7CFF15279124E9006DDFCB /* CardView.swift in Sources */,
 				FF9012E3278FB31C0039025F /* ViewController.swift in Sources */,
 				FF9012DF278FB31C0039025F /* AppDelegate.swift in Sources */,
 				FF9012E1278FB31C0039025F /* SceneDelegate.swift in Sources */,
 				FF901316278FC1A20039025F /* RegisterResponse.swift in Sources */,
 				FF901314278FBBA00039025F /* RegisterViewController.swift in Sources */,
 				FF90131C278FFCFD0039025F /* HomeViewController.swift in Sources */,
+				FF7CFF1A27913D19006DDFCB /* UITapGestureRecognizerExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
