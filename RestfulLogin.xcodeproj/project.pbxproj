@@ -13,6 +13,7 @@
 		FF7CFF15279124E9006DDFCB /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7CFF14279124E9006DDFCB /* CardView.swift */; };
 		FF7CFF1A27913D19006DDFCB /* UITapGestureRecognizerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7CFF1927913D19006DDFCB /* UITapGestureRecognizerExtension.swift */; };
 		FF7CFF1C27913E08006DDFCB /* RangeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7CFF1B27913E08006DDFCB /* RangeExtension.swift */; };
+		FF7CFF2327914DA9006DDFCB /* FontExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7CFF2227914DA9006DDFCB /* FontExt.swift */; };
 		FF9012DF278FB31C0039025F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9012DE278FB31C0039025F /* AppDelegate.swift */; };
 		FF9012E1278FB31C0039025F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9012E0278FB31C0039025F /* SceneDelegate.swift */; };
 		FF9012E3278FB31C0039025F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9012E2278FB31C0039025F /* ViewController.swift */; };
@@ -60,6 +61,11 @@
 		FF7CFF14279124E9006DDFCB /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		FF7CFF1927913D19006DDFCB /* UITapGestureRecognizerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITapGestureRecognizerExtension.swift; sourceTree = "<group>"; };
 		FF7CFF1B27913E08006DDFCB /* RangeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeExtension.swift; sourceTree = "<group>"; };
+		FF7CFF1E279149BB006DDFCB /* montserrat_regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = montserrat_regular.ttf; sourceTree = "<group>"; };
+		FF7CFF1F279149BC006DDFCB /* montserrat_medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = montserrat_medium.ttf; sourceTree = "<group>"; };
+		FF7CFF20279149BD006DDFCB /* montserrat_italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = montserrat_italic.ttf; sourceTree = "<group>"; };
+		FF7CFF21279149BD006DDFCB /* montserrat_bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = montserrat_bold.ttf; sourceTree = "<group>"; };
+		FF7CFF2227914DA9006DDFCB /* FontExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExt.swift; sourceTree = "<group>"; };
 		FF9012DB278FB31C0039025F /* RestfulLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestfulLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF9012DE278FB31C0039025F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF9012E0278FB31C0039025F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -135,10 +141,23 @@
 		FF7CFF1627913CC8006DDFCB /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				FF7CFF1D27914952006DDFCB /* fonts */,
 				FF7CFF1927913D19006DDFCB /* UITapGestureRecognizerExtension.swift */,
 				FF7CFF1B27913E08006DDFCB /* RangeExtension.swift */,
+				FF7CFF2227914DA9006DDFCB /* FontExt.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		FF7CFF1D27914952006DDFCB /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FF7CFF21279149BD006DDFCB /* montserrat_bold.ttf */,
+				FF7CFF20279149BD006DDFCB /* montserrat_italic.ttf */,
+				FF7CFF1F279149BC006DDFCB /* montserrat_medium.ttf */,
+				FF7CFF1E279149BB006DDFCB /* montserrat_regular.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 		FF9012D2278FB31C0039025F = {
@@ -476,6 +495,7 @@
 				FF901316278FC1A20039025F /* RegisterResponse.swift in Sources */,
 				FF901314278FBBA00039025F /* RegisterViewController.swift in Sources */,
 				FF90131C278FFCFD0039025F /* HomeViewController.swift in Sources */,
+				FF7CFF2327914DA9006DDFCB /* FontExt.swift in Sources */,
 				FF7CFF1A27913D19006DDFCB /* UITapGestureRecognizerExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -28,6 +28,8 @@ class ViewController: UIViewController {
         stackView.setCustomSpacing(18, after: emailTextField)
         stackView.setCustomSpacing(24, after: passwordTextField)
         
+        versionLbl.font = UIFont(name: Fonts.regular, size: 16)
+        
         let attributedString = NSMutableAttributedString(string: "Just click here to register", attributes: nil)
 //        let justRange = (attributedString.string as NSString).range(of: "Just")
         let dontRange = (attributedString.string as NSString).range(of: "click here")
