@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 import FirebaseFirestore
+import AVKit
 
 class HomeViewController: UIViewController {
     
@@ -29,6 +30,19 @@ class HomeViewController: UIViewController {
               print("Current data: \(data)")
                 self.message.text = "\(data["message"] ?? "")"
             }
+        
+        guard let path = Bundle.main.path(forResource: "video", ofType:"mp4") else {
+            debugPrint("video.m4v not found")
+            return
+        }
+        
+        let videoURL = URL(fileURLWithPath: path)
+//        let videoURL = URL(string: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4")
+        let player = AVPlayer(url: videoURL)
+        let playerLayer = AVPlayerLayer(player: player)
+        playerLayer.frame = self.view.bounds
+        self.view.layer.addSublayer(playerLayer)
+        player.play()
     }
     
     @IBAction func actionSend(_ sender: Any) {

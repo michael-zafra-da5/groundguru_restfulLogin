@@ -29,6 +29,7 @@
 		FF901318278FF03A0039025F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF901317278FF0390039025F /* GoogleService-Info.plist */; };
 		FF90131A278FFCD50039025F /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF901319278FFCD50039025F /* Home.storyboard */; };
 		FF90131C278FFCFD0039025F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF90131B278FFCFC0039025F /* HomeViewController.swift */; };
+		FF9339A5279686E100CE47CB /* AppVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9339A4279686E100CE47CB /* AppVersion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		FF901317278FF0390039025F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FF901319278FFCD50039025F /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		FF90131B278FFCFC0039025F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FF9339A4279686E100CE47CB /* AppVersion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppVersion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +232,7 @@
 		FF90130F278FB3580039025F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FF9339A4279686E100CE47CB /* AppVersion.swift */,
 				FF901315278FC1A20039025F /* RegisterResponse.swift */,
 			);
 			path = Models;
@@ -497,6 +500,7 @@
 				FF90131C278FFCFD0039025F /* HomeViewController.swift in Sources */,
 				FF7CFF2327914DA9006DDFCB /* FontExt.swift in Sources */,
 				FF7CFF1A27913D19006DDFCB /* UITapGestureRecognizerExtension.swift in Sources */,
+				FF9339A5279686E100CE47CB /* AppVersion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,7 @@
 
 import UIKit
 import FirebaseFirestore
+import Alamofire
 
 class ViewController: UIViewController {
     
@@ -22,6 +23,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+        checkAppVersion()
     }
     
     private func setupView() {
@@ -83,6 +85,17 @@ class ViewController: UIViewController {
             return
         }
         
+        self.loginViaFirebase(email: email, password: password)
+//        self.loginViaAPI(email: email, password: password)
+    }
+    
+    @IBAction func actionRegister(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Register", bundle: nil)
+        let detailVC = storyboard.instantiateViewController(withIdentifier: "registerSB") as! RegisterViewController
+        self.present(detailVC, animated: true, completion: nil)
+    }
+    
+    func loginViaFirebase(email:String, password:String){
         let db = Firestore.firestore()
         var isRegistered = false
         let userRef = db.collection("users")
@@ -110,12 +123,68 @@ class ViewController: UIViewController {
                 }
             }
         }
-        
     }
     
-    @IBAction func actionRegister(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "Register", bundle: nil)
-        let detailVC = storyboard.instantiateViewController(withIdentifier: "registerSB") as! RegisterViewController
-        self.present(detailVC, animated: true, completion: nil)
+    func checkAppVersion() {
+        let params: Parameters = ["platform": 1]
+        AF.request(
+            "http://192.168.254.141:8000/api/platform/versionChecker",
+            method: .post,
+            parameters: params,
+            encoding: JSONEncoding.default,
+            headers: nil
+        )
+//            .validate(statusCode: 200 ..< 299)
+            .responseString(completionHandler: { response in
+                switch response.result {
+                case .success(let value):
+                    print("value**: \(value)")
+                    do {
+                        let data = try value.data(using: .utf8)!
+                        print("data \(data)")
+                        let decoder = JSONDecoder()
+                        if let responseData = try? decoder.decode(AppVersion.self, from: data) {
+                            print("responseData \(responseData.version)")
+//                            responseData
+                        }
+                    } catch {
+                        // handle error
+                        print("error")
+                    }
+                case .failure(let error):
+                    print(error)
+                }
+            })
+    }
+    
+    func loginViaAPI(email:String, password:String) {
+        let params: Parameters = ["unique": email, "password": password]
+        AF.request(
+            "http://192.168.254.141:8000/api/auth/login",
+            method: .post,
+            parameters: params,
+            encoding: JSONEncoding.default,
+            headers: nil
+        )
+//            .validate(statusCode: 200 ..< 299) // For validation for status code 200 "Success"
+            .responseString(completionHandler: { response in
+                switch response.result {
+                case .success(let value):
+                    print("value**: \(value)")
+                    do {
+                        let data = try value.data(using: .utf8)!
+                        let decoder = JSONDecoder()
+                        if let responseData = try? decoder.decode(AppVersion.self, from: data) {
+                            print("responseData \(responseData.version)")
+//                            responseData
+                        }
+                    } catch {
+                        // handle error
+                        print("error")
+                    }
+                case .failure(let error):
+                    print(error)
+                }
+            })
     }
 }
