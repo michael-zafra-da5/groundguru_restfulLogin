@@ -57,7 +57,7 @@ class HomeViewController: UIViewController {
 //                print("Document added with ID: \(ref!.documentID)")
 //            }
 //        }
-        
+        //Add or Update fields
         db.collection("messages").document("CeFB8Ampc3v7b8P2JWgj").setData([
             "message": messageTextField.text ?? ""
         ]) { err in
@@ -68,5 +68,24 @@ class HomeViewController: UIViewController {
             }
         }
         
+        //Delete Document
+        db.collection("messages").document("CeFB8Ampc3v7b8P2JWgj").delete() { err in
+            if let err = err {
+                print("Error removing document: \(err)")
+            } else {
+                print("Document successfully removed!")
+            }
+        }
+        
+        //Delete Field data
+        db.collection("messages").document("CeFB8Ampc3v7b8P2JWgj").updateData([
+            "message": FieldValue.delete(),
+        ]) { err in
+            if let err = err {
+                print("Error updating document: \(err)")
+            } else {
+                print("Document successfully updated")
+            }
+        }
     }
 }
