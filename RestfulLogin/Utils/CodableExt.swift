@@ -10,6 +10,7 @@ import Foundation
 extension Encodable {
     func asDictionary() -> [String: Any] {
         do {
+            //Testing.asDictionary()
             let data = try JSONEncoder().encode(self)
             guard let dictionary = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String: Any] else {
                 return [:]

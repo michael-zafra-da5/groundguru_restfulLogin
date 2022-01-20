@@ -10,9 +10,15 @@ import UIKit
 import FirebaseFirestore
 import AVKit
 
-enum HashKey: String {
+enum MessageKey: String {
     case message = "message"
     case sender = "sender"
+}
+
+enum AnimalKey: String {
+    case message = "message"
+    case name = "name"
+    case description = "description"
 }
 
 class HomeViewController: UIViewController {
@@ -35,7 +41,7 @@ class HomeViewController: UIViewController {
                     return
                 }
                 
-                print("Current data: \(data[HashKey.message.rawValue])")
+                print("Current data: \(data[MessageKey.message.rawValue])")
                 if let message = data.asMessage() {
                     print("Current data: \(message)")
                     self.message.text = "\(message.message)"
@@ -69,10 +75,9 @@ class HomeViewController: UIViewController {
         //                print("Document added with ID: \(ref!.documentID)")
         //            }
         //        }
-        let message = Message(
-            message: messageTextField.text ?? "",
-            sender: received?.sender ?? ""
-        ).asDictionary()
+        let message = Message(message: messageTextField.text ?? "", sender: received?.sender ?? "").asDictionary()
+        
+        let message2 = asDictionary(message: Message(message: messageTextField.text ?? "", sender: received?.sender ?? ""))
         
         //Add or Update fields via Model
         db.collection("messages").document("CeFB8Ampc3v7b8P2JWgj").setData(message) { err in
@@ -82,6 +87,9 @@ class HomeViewController: UIViewController {
                 print("Document successfully written!")
             }
         }
+        
+        ["message":""]
+        [MessageKey.message.rawValue:""]
         
         //Add or Update fields via default dictionary
         //setData will create new document with parameter fields
@@ -116,5 +124,18 @@ class HomeViewController: UIViewController {
 //                print("Document successfully updated")
 //            }
 //        }
+    }
+    
+    func asDictionary(message:Message) -> [String: Any] {
+        do {
+            //asDictionary(Testing)
+            let data = try JSONEncoder().encode(message)
+            guard let dictionary = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String: Any] else {
+                return [:]
+            }
+            return dictionary
+        } catch {
+            return [:]
+        }
     }
 }

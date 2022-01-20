@@ -35,6 +35,25 @@
                                     <action selector="actionSend:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Bel-1R-UkB"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="aKy-PX-qOk">
+                                <rect key="frame" x="75" y="389" width="264" height="128"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Oct-a4-7O6">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="128" id="2lo-k8-uW6"/>
+                                            <constraint firstAttribute="height" constant="128" id="dPA-uL-Qpy"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_svg" translatesAutoresizingMaskIntoConstraints="NO" id="M8k-Q6-W7N">
+                                        <rect key="frame" x="136" y="0.0" width="128" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="rpl-0N-uiZ"/>
+                                            <constraint firstAttribute="width" constant="128" id="tNv-d9-jze"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -44,8 +63,10 @@
                             <constraint firstItem="ibQ-x0-7KI" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="9df-ow-nGN"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ibQ-x0-7KI" secondAttribute="trailing" constant="20" id="Bc9-w4-prn"/>
                             <constraint firstItem="BWw-iu-6c6" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="FWY-0H-Eca"/>
+                            <constraint firstItem="aKy-PX-qOk" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="ZW8-wf-hof"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="fCT-HY-bTf" secondAttribute="trailing" constant="20" id="ZcB-R3-uon"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="BWw-iu-6c6" secondAttribute="bottom" constant="46" id="g6G-sf-wy8"/>
+                            <constraint firstItem="aKy-PX-qOk" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="iQp-SV-71s"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="BWw-iu-6c6" secondAttribute="trailing" constant="20" id="pKJ-4i-c0u"/>
                             <constraint firstItem="fCT-HY-bTf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="yNk-EB-lPf"/>
                         </constraints>
@@ -61,6 +82,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="logo" width="341.33334350585938" height="341.33334350585938"/>
+        <image name="logo_svg" width="1000" height="1000"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
