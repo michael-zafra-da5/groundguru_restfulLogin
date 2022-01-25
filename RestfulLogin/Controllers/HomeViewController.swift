@@ -29,25 +29,48 @@ class HomeViewController: UIViewController {
     var received: Message? = nil
     
     override func viewDidLoad() {
+        
+        let email = UserDefaults.standard.string(forKey: Constants().userDataKey)
+        print("Home Page: \(email ?? "")")
+        
         let db = Firestore.firestore()
-        db.collection("messages").document("CeFB8Ampc3v7b8P2JWgj")
+        db.collection("messages").document("JozpmVcsr2Lag6oF8TTm")
             .addSnapshotListener { documentSnapshot, error in
                 guard let document = documentSnapshot else {
                     print("Error fetching document: \(error!)")
                     return
                 }
-                guard let data = document.data() else {
+                guard let firebaseData = document.data() else {
                     print("Document data was empty.")
                     return
                 }
                 
-                print("Current data: \(data[MessageKey.message.rawValue])")
-                if let message = data.asMessage() {
-                    print("Current data: \(message)")
-                    self.message.text = "\(message.message)"
-                    self.received = message
+                print("Current data: \(firebaseData[MessageKey.message.rawValue] ?? "")")
+                if let data = firebaseData.asMessage() {
+                    print("Current data: \(data)")
+                    self.message.text = "\(data.message)"
+                    self.received = data
                 }
             }
+        
+//        db.collection("messages").whereField("state", isEqualTo: "CA")
+//            .addSnapshotListener { querySnapshot, error in
+//                guard let snapshot = querySnapshot else {
+//                    print("Error fetching snapshots: \(error!)")
+//                    return
+//                }
+//                snapshot.documentChanges.forEach { diff in
+//                    if (diff.type == .added) {
+//                        print("New city: \(diff.document.data())")
+//                    }
+//                    if (diff.type == .modified) {
+//                        print("Modified city: \(diff.document.data())")
+//                    }
+//                    if (diff.type == .removed) {
+//                        print("Removed city: \(diff.document.data())")
+//                    }
+//                }
+//            }
         
         guard let path = Bundle.main.path(forResource: "video", ofType:"mp4") else {
             debugPrint("video.m4v not found")
@@ -77,10 +100,10 @@ class HomeViewController: UIViewController {
         //        }
         let message = Message(message: messageTextField.text ?? "", sender: received?.sender ?? "").asDictionary()
         
-        let message2 = asDictionary(message: Message(message: messageTextField.text ?? "", sender: received?.sender ?? ""))
+//        let message2 = asDictionary(message: Message(message: messageTextField.text ?? "", sender: received?.sender ?? ""))
         
         //Add or Update fields via Model
-        db.collection("messages").document("CeFB8Ampc3v7b8P2JWgj").setData(message) { err in
+        db.collection("messages").document("JozpmVcsr2Lag6oF8TTm").setData(message) { err in
             if let err = err {
                 print("Error writing document: \(err)")
             } else {
@@ -94,7 +117,7 @@ class HomeViewController: UIViewController {
         //Add or Update fields via default dictionary
         //setData will create new document with parameter fields
         //updateData will update the document data with specific field
-//        db.collection("messages").document("CeFB8Ampc3v7b8P2JWgj").updateData([
+//        db.collection("messages").document("JozpmVcsr2Lag6oF8TTm").updateData([
 //            HashKey.message.rawValue: messageTextField.text ?? "",
 //            HashKey.sender.rawValue: "sample@gmail.com"
 //        ]) { err in
@@ -106,7 +129,7 @@ class HomeViewController: UIViewController {
 //        }
 //
 //        //Delete Document
-//        db.collection("messages").document("CeFB8Ampc3v7b8P2JWgj").delete() { err in
+//        db.collection("messages").document("JozpmVcsr2Lag6oF8TTm").delete() { err in
 //            if let err = err {
 //                print("Error removing document: \(err)")
 //            } else {
@@ -115,7 +138,7 @@ class HomeViewController: UIViewController {
 //        }
 //
 //        //Delete Field data
-//        db.collection("messages").document("CeFB8Ampc3v7b8P2JWgj").updateData([
+//        db.collection("messages").document("JozpmVcsr2Lag6oF8TTm").updateData([
 //            "message": FieldValue.delete(),
 //        ]) { err in
 //            if let err = err {

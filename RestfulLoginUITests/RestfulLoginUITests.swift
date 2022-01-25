@@ -39,4 +39,88 @@ class RestfulLoginUITests: XCTestCase {
             }
         }
     }
+    
+    func testNavigation() throws {
+        let app = XCUIApplication()
+        let emailTextField = app.textFields["emailTF"]
+        XCTAssertTrue(emailTextField.exists, "Text field email doesn't exist")
+        emailTextField.tap()
+        emailTextField.clearText(andReplaceWith: "sample@gmail.com")
+        XCTAssertEqual(emailTextField.value as! String, "sample@gmail.com", "Text field value is not correct")
+        sleep(2)
+        
+        let email = app.textFields.element(boundBy: 0)
+        let pass = app.secureTextFields.element(boundBy: 0)
+        XCTAssertTrue(email.exists, "Text field email doesn't exist")
+        XCTAssertTrue(pass.exists, "Text field password doesn't exist")
+        pass.tap()
+        pass.typeText("123456")
+//        XCTAssertEqual(pass.value as! String, "123456", "Text field value is not correct")
+        
+        let button = app.buttons["Login"]
+        XCTAssertTrue(button.exists, "button doesn't exist")
+        button.tap()
+    }
+
+//    func testRestLoginPage() throws {
+//        let app = XCUIApplication()
+//        let login = app.buttons["Login"]
+//        let email = app.staticTexts["Email"]
+//        let password = app.staticTexts["Password"]
+////        let register = app.staticTexts["registerLbl"]
+//
+////        if login.isEnabled {
+////            XCTAssertTrue(register.exists)
+////        } else {
+////            XCTAssertFalse(register.exists)
+////        }
+//        XCTAssertTrue(login.exists)
+//        XCTAssertTrue(email.exists)
+//        XCTAssertTrue(password.exists)
+//
+//        app.buttons["Login"].tap()
+////        XCTAssertTrue(register.exists, "Missing Register")
+////        let alert = app.alerts["myAlert"]
+////        if alert.exists {
+////            let button = alert.buttons["OK"]
+////            button.tap()
+////        }
+//    }
+    
+    override func setUp() {
+        continueAfterFailure = false
+        let app = XCUIApplication()
+        app.launch()
+        addUIInterruptionMonitor(withDescription: "System Dialog") {
+          (alert) -> Bool in
+          let okButton = alert.buttons["OK"]
+          if okButton.exists {
+            okButton.tap()
+          }
+
+          return true
+        }
+    }
+}
+
+extension XCUIElement {
+    func clearText(andReplaceWith newText:String? = nil) {
+        tap()
+        press(forDuration: 1.0)
+        var select = XCUIApplication().menuItems["Select All"]
+
+        if !select.exists {
+            select = XCUIApplication().menuItems["Select"]
+        }
+        //For empty fields there will be no "Select All", so we need to check
+        if select.waitForExistence(timeout: 0.5), select.exists {
+            select.tap()
+            typeText(String(XCUIKeyboardKey.delete.rawValue))
+        } else {
+            tap()
+        }
+        if let newVal = newText {
+            typeText(newVal)
+        }
+    }
 }

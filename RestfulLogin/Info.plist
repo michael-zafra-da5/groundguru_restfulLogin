@@ -11,6 +11,23 @@
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
+		<key>NSAppTransportSecurity</key>
+		<dict>
+			<key>NSAllowsArbitraryLoads</key>
+			<true/>
+			<key>NSExceptionDomains</key>
+			<dict>
+				<key>http://restapi.adequateshop.com/</key>
+				<dict>
+					<key>NSIncludesSubdomains</key>
+					<true/>
+					<key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
+					<true/>
+					<key>NSTemporaryExceptionMinimumTLSVersion</key>
+					<string>TLSv1.1</string>
+				</dict>
+			</dict>
+		</dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
 		<false/>
 		<key>UISceneConfigurations</key>
@@ -29,23 +46,6 @@
 		</dict>
 		<key>UIUserInterfaceStyle</key>
 		<string>Light</string>
-		<key>NSAppTransportSecurity</key>
-		<dict>
-			<key>NSAllowsArbitraryLoads</key>
-			<true/>
-			<key>NSExceptionDomains</key>
-			<dict>
-				<key>http://restapi.adequateshop.com/</key>
-				<dict>
-					<key>NSIncludesSubdomains</key>
-					<true/>
-					<key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
-					<true/>
-					<key>NSTemporaryExceptionMinimumTLSVersion</key>
-					<string>TLSv1.1</string>
-				</dict>
-			</dict>
-		</dict>
 	</dict>
 </dict>
 </plist>

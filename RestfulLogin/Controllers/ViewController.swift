@@ -19,6 +19,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var registerButton: UIButton!
     
     @IBOutlet weak var versionLbl: UILabel!
+    @IBOutlet weak var logo: UIImageView!
+    
+    var colorScheme: UIUserInterfaceStyle? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +30,7 @@ class ViewController: UIViewController {
     }
     
     private func setupView() {
+        colorScheme = self.traitCollection.userInterfaceStyle
         stackView.setCustomSpacing(18, after: emailTextField)
         stackView.setCustomSpacing(24, after: passwordTextField)
         
@@ -50,6 +54,29 @@ class ViewController: UIViewController {
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(tapLabel(tap:)))
         versionLbl.addGestureRecognizer(tap)
+        
+        let email = UserDefaults.standard.string(forKey: Constants().userDataKey)
+        print("Login Page: \(email ?? "")")
+        emailTextField.text = email
+//        UserDefaults.standard.removeObject(forKey: Constants().userDataKey)
+        
+        
+        //Conditional Statement
+//        if self.traitCollection.userInterfaceStyle == .dark {
+//            // User Interface is Dark
+////            emailTextField.backgroundColor = UIColor.white
+//            self.view.backgroundColor = UIColor.init(hex: "#16537E")
+//            print("is Dark")
+//        } else {
+//            // User Interface is Light
+//            self.view.backgroundColor = UIColor.init(hex: "#66b3ff")
+//            print("is light")
+//        }
+        
+        
+//        self.view.backgroundColor = colorScheme == .dark ? UIColor.init(hex: "#16537E") : UIColor.init(hex: "#66b3ff")
+        self.view.backgroundColor = UIColor.init(hex: colorScheme == .dark ? "#16537E" : "#66b3ff")
+        print("passwordTextField.accessibilityIdentifier \(passwordTextField.accessibilityIdentifier)")
     }
     
     @objc func tapLabel(tap: UITapGestureRecognizer) {
@@ -80,6 +107,7 @@ class ViewController: UIViewController {
         let password = passwordTextField.text ?? ""
         if email == "" || password == "" {
             let alert = UIAlertController(title: "Error", message: "Email or Password is required", preferredStyle: .alert)
+            alert.view.accessibilityIdentifier = "myAlert"
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
             return
@@ -112,6 +140,9 @@ class ViewController: UIViewController {
                 
                 if isRegistered {
                     print("Login")
+                    
+                    UserDefaults.standard.set(email, forKey: Constants().userDataKey)
+                    
                     let storyboard = UIStoryboard(name: "Home", bundle: nil)
                     let detailVC = storyboard.instantiateViewController(withIdentifier: "homeSB") as! HomeViewController
                     detailVC.modalPresentationStyle = .fullScreen
@@ -186,5 +217,15 @@ class ViewController: UIViewController {
                     print(error)
                 }
             })
+    }
+    
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        // Trait collection has already changed
+        colorScheme = self.traitCollection.userInterfaceStyle
+        self.view.backgroundColor = UIColor.init(hex: colorScheme == .dark ? "#16537E" : "#66b3ff")
+    }
+
+    override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
+        // Trait collection will change. Use this one so you know what the state is changing to.
     }
 }
