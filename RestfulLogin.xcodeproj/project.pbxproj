@@ -37,6 +37,13 @@
 		FF9339A5279686E100CE47CB /* AppVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9339A4279686E100CE47CB /* AppVersion.swift */; };
 		FFA2BCB6279E572100F57584 /* ColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA2BCB5279E572100F57584 /* ColorExt.swift */; };
 		FFC5E377279A7B6000A477CC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC5E376279A7B6000A477CC /* Constants.swift */; };
+		FFEEAA5927A2709C00676EFE /* loading-text.css in Resources */ = {isa = PBXBuildFile; fileRef = FFEEAA5627A2709B00676EFE /* loading-text.css */; };
+		FFEEAA5A27A2709C00676EFE /* loading-text.svg in Resources */ = {isa = PBXBuildFile; fileRef = FFEEAA5727A2709B00676EFE /* loading-text.svg */; };
+		FFEEAA5B27A2709C00676EFE /* image.svg in Resources */ = {isa = PBXBuildFile; fileRef = FFEEAA5827A2709C00676EFE /* image.svg */; };
+		FFEEAA5F27A2759900676EFE /* logo.svg in Resources */ = {isa = PBXBuildFile; fileRef = FFEEAA5E27A2759800676EFE /* logo.svg */; };
+		FFEEAA6127A278A000676EFE /* logo2.svg in Resources */ = {isa = PBXBuildFile; fileRef = FFEEAA6027A2789F00676EFE /* logo2.svg */; };
+		FFEEAA6327A27C0200676EFE /* Cow-01.svg in Resources */ = {isa = PBXBuildFile; fileRef = FFEEAA6227A27C0200676EFE /* Cow-01.svg */; };
+		FFEEAA6527A27E5F00676EFE /* logo-animation.css in Resources */ = {isa = PBXBuildFile; fileRef = FFEEAA6427A27E5F00676EFE /* logo-animation.css */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +108,13 @@
 		FF9339A4279686E100CE47CB /* AppVersion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppVersion.swift; sourceTree = "<group>"; };
 		FFA2BCB5279E572100F57584 /* ColorExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExt.swift; sourceTree = "<group>"; };
 		FFC5E376279A7B6000A477CC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FFEEAA5627A2709B00676EFE /* loading-text.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "loading-text.css"; sourceTree = "<group>"; };
+		FFEEAA5727A2709B00676EFE /* loading-text.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "loading-text.svg"; sourceTree = "<group>"; };
+		FFEEAA5827A2709C00676EFE /* image.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = image.svg; sourceTree = "<group>"; };
+		FFEEAA5E27A2759800676EFE /* logo.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = logo.svg; sourceTree = "<group>"; };
+		FFEEAA6027A2789F00676EFE /* logo2.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = logo2.svg; sourceTree = "<group>"; };
+		FFEEAA6227A27C0200676EFE /* Cow-01.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Cow-01.svg"; sourceTree = "<group>"; };
+		FFEEAA6427A27E5F00676EFE /* logo-animation.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = "logo-animation.css"; path = "../../../../Downloads/Elephant-master/Example-iOS/Example-iOS/Resources/logo-animation.css"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +219,7 @@
 		FF9012DD278FB31C0039025F /* RestfulLogin */ = {
 			isa = PBXGroup;
 			children = (
+				FFEEAA5527A2707E00676EFE /* Resources */,
 				FF7CFF1627913CC8006DDFCB /* Utils */,
 				FF901317278FF0390039025F /* GoogleService-Info.plist */,
 				FF901310278FB3600039025F /* Controllers */,
@@ -267,6 +282,20 @@
 				FF44823827A11F3E00E6ED95 /* SplashVC.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FFEEAA5527A2707E00676EFE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FFEEAA6427A27E5F00676EFE /* logo-animation.css */,
+				FFEEAA6227A27C0200676EFE /* Cow-01.svg */,
+				FFEEAA6027A2789F00676EFE /* logo2.svg */,
+				FFEEAA5E27A2759800676EFE /* logo.svg */,
+				FFEEAA5827A2709C00676EFE /* image.svg */,
+				FFEEAA5627A2709B00676EFE /* loading-text.css */,
+				FFEEAA5727A2709B00676EFE /* loading-text.svg */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -378,13 +407,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFEEAA6327A27C0200676EFE /* Cow-01.svg in Resources */,
+				FFEEAA6127A278A000676EFE /* logo2.svg in Resources */,
 				FF9012EB278FB31E0039025F /* LaunchScreen.storyboard in Resources */,
 				FF9012E8278FB31E0039025F /* Assets.xcassets in Resources */,
 				FF901318278FF03A0039025F /* GoogleService-Info.plist in Resources */,
 				FF90131A278FFCD50039025F /* Home.storyboard in Resources */,
 				FF9012E6278FB31C0039025F /* Main.storyboard in Resources */,
+				FFEEAA6527A27E5F00676EFE /* logo-animation.css in Resources */,
 				FF901312278FBA050039025F /* Register.storyboard in Resources */,
 				FF44823B27A1254500E6ED95 /* Splash.storyboard in Resources */,
+				FFEEAA5A27A2709C00676EFE /* loading-text.svg in Resources */,
+				FFEEAA5B27A2709C00676EFE /* image.svg in Resources */,
+				FFEEAA5F27A2759900676EFE /* logo.svg in Resources */,
+				FFEEAA5927A2709C00676EFE /* loading-text.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -116,7 +116,7 @@ class HomeViewController: UIViewController {
         //                print("Document added with ID: \(ref!.documentID)")
         //            }
         //        }
-        let message = Message(message: messageTextField.text ?? "", sender: received?.sender ?? "", testData: received?.testData ?? "").asDictionary()
+        let message = Message(message: messageTextField.text ?? "", sender: received?.sender ?? "", testData: received?.testData ?? "", maskQuantity: received?.maskQuantity ?? "").asDictionary()
         
 //        let message2 = asDictionary(message: Message(message: messageTextField.text ?? "", sender: received?.sender ?? ""))
         

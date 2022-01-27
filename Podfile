@@ -7,6 +7,7 @@ target 'RestfulLogin' do
 
   # Layout
   pod 'SnapKit', '<= 4.2.0'
+  pod 'Elephant'
   
   # Pods for RestfulLogin
   # RestAPI
