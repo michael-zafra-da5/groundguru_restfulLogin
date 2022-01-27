@@ -31,10 +31,11 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         
         let email = UserDefaults.standard.string(forKey: Constants().userDataKey)
-        print("Home Page: \(email ?? "")")
+        let userID = UserDefaults.standard.string(forKey: Constants().userID)
+        print("Home Page: \(userID ?? "") \(email ?? "")")
         
         let db = Firestore.firestore()
-        db.collection("messages").document("JozpmVcsr2Lag6oF8TTm")
+        db.collection("messages").document(userID ?? "")
             .addSnapshotListener { documentSnapshot, error in
                 guard let document = documentSnapshot else {
                     print("Error fetching document: \(error!)")
@@ -102,17 +103,15 @@ class HomeViewController: UIViewController {
         
 //        let message2 = asDictionary(message: Message(message: messageTextField.text ?? "", sender: received?.sender ?? ""))
         
+        let userID = UserDefaults.standard.string(forKey: Constants().userID) ?? ""
         //Add or Update fields via Model
-        db.collection("messages").document("JozpmVcsr2Lag6oF8TTm").setData(message) { err in
+        db.collection("messages").document(userID).setData(message) { err in
             if let err = err {
                 print("Error writing document: \(err)")
             } else {
                 print("Document successfully written!")
             }
         }
-        
-        ["message":""]
-        [MessageKey.message.rawValue:""]
         
         //Add or Update fields via default dictionary
         //setData will create new document with parameter fields

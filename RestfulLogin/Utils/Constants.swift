@@ -8,5 +8,6 @@
 import Foundation
 
 class Constants {
-    var userDataKey = "userDataKey"
+    let userID = "userID"
+    let userDataKey = "userDataKey"
 }

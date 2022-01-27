@@ -13,6 +13,8 @@
 		FF0DE6D2279904A200311E9A /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0DE6D1279904A200311E9A /* Message.swift */; };
 		FF0DE6D4279907F100311E9A /* CodableExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0DE6D3279907F100311E9A /* CodableExt.swift */; };
 		FF0DE6D627990B6800311E9A /* DictionaryExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0DE6D527990B6800311E9A /* DictionaryExt.swift */; };
+		FF44823927A11F3F00E6ED95 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF44823827A11F3E00E6ED95 /* SplashVC.swift */; };
+		FF44823B27A1254500E6ED95 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF44823A27A1254500E6ED95 /* Splash.storyboard */; };
 		FF7CFF15279124E9006DDFCB /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7CFF14279124E9006DDFCB /* CardView.swift */; };
 		FF7CFF1A27913D19006DDFCB /* UITapGestureRecognizerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7CFF1927913D19006DDFCB /* UITapGestureRecognizerExtension.swift */; };
 		FF7CFF1C27913E08006DDFCB /* RangeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7CFF1B27913E08006DDFCB /* RangeExtension.swift */; };
@@ -67,6 +69,8 @@
 		FF0DE6D1279904A200311E9A /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		FF0DE6D3279907F100311E9A /* CodableExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableExt.swift; sourceTree = "<group>"; };
 		FF0DE6D527990B6800311E9A /* DictionaryExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryExt.swift; sourceTree = "<group>"; };
+		FF44823827A11F3E00E6ED95 /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
+		FF44823A27A1254500E6ED95 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
 		FF7CFF14279124E9006DDFCB /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		FF7CFF1927913D19006DDFCB /* UITapGestureRecognizerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITapGestureRecognizerExtension.swift; sourceTree = "<group>"; };
 		FF7CFF1B27913E08006DDFCB /* RangeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeExtension.swift; sourceTree = "<group>"; };
@@ -239,6 +243,7 @@
 				FF901311278FBA050039025F /* Register.storyboard */,
 				FF901319278FFCD50039025F /* Home.storyboard */,
 				FF7CFF14279124E9006DDFCB /* CardView.swift */,
+				FF44823A27A1254500E6ED95 /* Splash.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -259,6 +264,7 @@
 				FF9012E2278FB31C0039025F /* ViewController.swift */,
 				FF901313278FBBA00039025F /* RegisterViewController.swift */,
 				FF90131B278FFCFC0039025F /* HomeViewController.swift */,
+				FF44823827A11F3E00E6ED95 /* SplashVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -378,6 +384,7 @@
 				FF90131A278FFCD50039025F /* Home.storyboard in Resources */,
 				FF9012E6278FB31C0039025F /* Main.storyboard in Resources */,
 				FF901312278FBA050039025F /* Register.storyboard in Resources */,
+				FF44823B27A1254500E6ED95 /* Splash.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,6 +524,7 @@
 				FFA2BCB6279E572100F57584 /* ColorExt.swift in Sources */,
 				FF901314278FBBA00039025F /* RegisterViewController.swift in Sources */,
 				FF90131C278FFCFD0039025F /* HomeViewController.swift in Sources */,
+				FF44823927A11F3F00E6ED95 /* SplashVC.swift in Sources */,
 				FF7CFF2327914DA9006DDFCB /* FontExt.swift in Sources */,
 				FF0DE6D2279904A200311E9A /* Message.swift in Sources */,
 				FF7CFF1A27913D19006DDFCB /* UITapGestureRecognizerExtension.swift in Sources */,

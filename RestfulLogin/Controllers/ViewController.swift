@@ -25,6 +25,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("😅Load Login😅")
         setupView()
         checkAppVersion()
     }
@@ -136,6 +137,8 @@ class ViewController: UIViewController {
                 for document in querySnapshot!.documents {
                     print("\(document.documentID) => \(document.data())")
                     isRegistered = true
+                    
+                    UserDefaults.standard.set(document.documentID, forKey: Constants().userID)
                 }
                 
                 if isRegistered {
