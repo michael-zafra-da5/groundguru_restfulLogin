@@ -87,6 +87,25 @@ class SplashVC: UIViewController {
             let detailVC = storyboard.instantiateViewController(withIdentifier: storyboardName == "Main" ? "loginSB" : "homeSB")
             detailVC.modalPresentationStyle = .fullScreen
             self.present(storyboardName == "Main" ? (detailVC as! ViewController) : (detailVC as! HomeViewController), animated: true, completion: nil)
+            
+            var dictionary : [String:String] = [:]
+            dictionary["test1"] = ""
+            dictionary["test2"] = ""
+            dictionary["test3"] = ""
+            dictionary["test4"] = ""
+            for key in dictionary.keys {
+               print("\(key)")
+            }
+
+//            let capkeyExists = items[indexPath.row]["capQuantity"] != nil
+//            let maskkeyExists = items[indexPath.row]["maskQuantity"] != nil
+//            if keyExists {
+//                cell.text
+//            }
+//
+//            if maskkeyExists {
+//                cell.text
+//            }
         }
     }
 }
