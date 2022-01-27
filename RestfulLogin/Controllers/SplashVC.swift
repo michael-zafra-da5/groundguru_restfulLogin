@@ -39,11 +39,12 @@ class SplashVC: UIViewController {
     private func initTimer() {
         Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
             self.timeLeft -= 1
+            print("Time Left \(self.timeLeft)")
             if(self.timeLeft==0){
                 timer.invalidate()
                 
                 let userID = UserDefaults.standard.string(forKey: Constants().userID)
-                print("😅userID \(userID)😅")
+                print("😅userID \(userID ?? "")😅")
                 if userID != nil {
                     let storyboard = UIStoryboard(name: "Home", bundle: nil)
                     let detailVC = storyboard.instantiateViewController(withIdentifier: "homeSB") as! HomeViewController

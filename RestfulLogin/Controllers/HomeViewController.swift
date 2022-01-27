@@ -87,6 +87,22 @@ class HomeViewController: UIViewController {
         player.play()
     }
     
+    @IBAction func actionLogout(_ sender: Any) {
+        
+        let alert = UIAlertController(title: nil, message: "Are you sure you want to logout?", preferredStyle: .alert)
+        alert.view.accessibilityIdentifier = "myAlert"
+        alert.addAction(UIAlertAction(title: "Yes", style: UIAlertAction.Style.default, handler: { _ in
+            UserDefaults.standard.removeObject(forKey: Constants().userID)
+            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let detailVC = storyboard.instantiateViewController(withIdentifier: "loginSB") as! ViewController
+            detailVC.modalPresentationStyle = .fullScreen
+            self.present(detailVC, animated: true, completion: nil)
+        }))
+        alert.addAction(UIAlertAction(title: "No", style: UIAlertAction.Style.cancel, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
     @IBAction func actionSend(_ sender: Any) {
         let db = Firestore.firestore()
         //        var ref: DocumentReference? = nil

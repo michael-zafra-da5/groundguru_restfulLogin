@@ -134,17 +134,18 @@ class ViewController: UIViewController {
             if let err = err {
                 print("Error getting documents: \(err)")
             } else {
+                var userId = ""
                 for document in querySnapshot!.documents {
                     print("\(document.documentID) => \(document.data())")
                     isRegistered = true
-                    
-                    UserDefaults.standard.set(document.documentID, forKey: Constants().userID)
+                    userId = document.documentID
                 }
                 
                 if isRegistered {
                     print("Login")
                     
                     UserDefaults.standard.set(email, forKey: Constants().userDataKey)
+                    UserDefaults.standard.set(userId, forKey: Constants().userID)
                     
                     let storyboard = UIStoryboard(name: "Home", bundle: nil)
                     let detailVC = storyboard.instantiateViewController(withIdentifier: "homeSB") as! HomeViewController
