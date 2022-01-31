@@ -8,6 +8,9 @@
 import UIKit
 import FirebaseFirestore
 import Alamofire
+import Toast_Swift
+import SwiftGifOrigin
+import FirebaseMessaging
 
 class ViewController: UIViewController {
     
@@ -28,6 +31,18 @@ class ViewController: UIViewController {
         print("😅Load Login😅")
         setupView()
         checkAppVersion()
+        setupNotification()
+    }
+    
+    private func setupNotification() {
+      Messaging.messaging().token { token, error in
+        if let error = error {
+          print("Error fetching FCM registration token: \(error)")
+        } else if let token = token {
+          print("FCM registration token: \(token)")
+//          self.fcmRegTokenMessage.text  = "Remote FCM registration token: \(token)"
+        }
+      }
     }
     
     private func setupView() {
@@ -77,7 +92,18 @@ class ViewController: UIViewController {
         
 //        self.view.backgroundColor = colorScheme == .dark ? UIColor.init(hex: "#16537E") : UIColor.init(hex: "#66b3ff")
         self.view.backgroundColor = UIColor.init(hex: colorScheme == .dark ? "#16537E" : "#66b3ff")
-        print("passwordTextField.accessibilityIdentifier \(passwordTextField.accessibilityIdentifier)")
+        
+        
+        //Sample toast
+        let tapLogo = UITapGestureRecognizer(target: self, action: #selector(tapLabel(tap:)))
+        logo.addGestureRecognizer(tapLogo)
+        self.view.makeToast("This is toast", position: .center)
+        
+        logo.loadGif(asset: "delivery")
+    }
+    
+    @objc func tapLogo(tap: UITapGestureRecognizer) {
+        
     }
     
     @objc func tapLabel(tap: UITapGestureRecognizer) {

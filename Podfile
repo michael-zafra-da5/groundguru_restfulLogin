@@ -8,6 +8,8 @@ target 'RestfulLogin' do
   # Layout
   pod 'SnapKit', '<= 4.2.0'
   pod 'Elephant'
+  pod 'Toast-Swift', '~> 5.0.1'
+  pod 'SwiftGifOrigin', '~> 1.7.0'
   
   # Pods for RestfulLogin
   # RestAPI
@@ -18,6 +20,7 @@ target 'RestfulLogin' do
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
+  pod 'Firebase/Messaging'
   
   pod 'Cards'
 
