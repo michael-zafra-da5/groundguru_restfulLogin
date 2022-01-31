@@ -35,6 +35,7 @@
 		FF90131A278FFCD50039025F /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF901319278FFCD50039025F /* Home.storyboard */; };
 		FF90131C278FFCFD0039025F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF90131B278FFCFC0039025F /* HomeViewController.swift */; };
 		FF9339A5279686E100CE47CB /* AppVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9339A4279686E100CE47CB /* AppVersion.swift */; };
+		FF998A6127A7A7FD0092A9DD /* PushNotificationSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF998A6027A7A7FD0092A9DD /* PushNotificationSender.swift */; };
 		FFA2BCB6279E572100F57584 /* ColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA2BCB5279E572100F57584 /* ColorExt.swift */; };
 		FFC5E377279A7B6000A477CC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC5E376279A7B6000A477CC /* Constants.swift */; };
 		FFEEAA5927A2709C00676EFE /* loading-text.css in Resources */ = {isa = PBXBuildFile; fileRef = FFEEAA5627A2709B00676EFE /* loading-text.css */; };
@@ -107,6 +108,7 @@
 		FF90131B278FFCFC0039025F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FF9339A4279686E100CE47CB /* AppVersion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppVersion.swift; sourceTree = "<group>"; };
 		FF998A5E27A782B20092A9DD /* RestfulLogin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RestfulLogin.entitlements; sourceTree = "<group>"; };
+		FF998A6027A7A7FD0092A9DD /* PushNotificationSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationSender.swift; sourceTree = "<group>"; };
 		FFA2BCB5279E572100F57584 /* ColorExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExt.swift; sourceTree = "<group>"; };
 		FFC5E376279A7B6000A477CC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FFEEAA5627A2709B00676EFE /* loading-text.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "loading-text.css"; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 		FF7CFF1627913CC8006DDFCB /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				FF998A5F27A7A7E10092A9DD /* services */,
 				FFA2BCB5279E572100F57584 /* ColorExt.swift */,
 				FF7CFF1D27914952006DDFCB /* fonts */,
 				FF7CFF1927913D19006DDFCB /* UITapGestureRecognizerExtension.swift */,
@@ -284,6 +287,14 @@
 				FF44823827A11F3E00E6ED95 /* SplashVC.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FF998A5F27A7A7E10092A9DD /* services */ = {
+			isa = PBXGroup;
+			children = (
+				FF998A6027A7A7FD0092A9DD /* PushNotificationSender.swift */,
+			);
+			path = services;
 			sourceTree = "<group>";
 		};
 		FFEEAA5527A2707E00676EFE /* Resources */ = {
@@ -563,6 +574,7 @@
 				FF901314278FBBA00039025F /* RegisterViewController.swift in Sources */,
 				FF90131C278FFCFD0039025F /* HomeViewController.swift in Sources */,
 				FF44823927A11F3F00E6ED95 /* SplashVC.swift in Sources */,
+				FF998A6127A7A7FD0092A9DD /* PushNotificationSender.swift in Sources */,
 				FF7CFF2327914DA9006DDFCB /* FontExt.swift in Sources */,
 				FF0DE6D2279904A200311E9A /* Message.swift in Sources */,
 				FF7CFF1A27913D19006DDFCB /* UITapGestureRecognizerExtension.swift in Sources */,
